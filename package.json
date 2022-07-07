@@ -1,0 +1,19 @@
+{
+  "name": "example-mern-tsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "concurrently \"npm install --prefix my-app\" \"npm install --prefix backend\"",
+    "server": "npm start --prefix backend",
+    "server-dev": "npm run dev --prefix backend",
+    "client": "npm start --prefix my-app",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}

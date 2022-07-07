@@ -1,0 +1,24 @@
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 1rem;
+    
+}
+
+nav.nav :is(.left, .center, .right) *:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+nav.nav .link {
+    height: 2rem;
+    padding: 0 1rem;
+    background-color: red;
+}

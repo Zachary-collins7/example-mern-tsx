@@ -1,0 +1,76 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ignores are separated into frontend, backend, and other
+# secrets and keys should NOT be stored on github
+
+# ---------- ---------- ----------
+# ---------- Frontend   ----------
+# ---------- ---------- ----------
+
+# dependencies
+my-app/node_modules
+my-app/.pnp
+my-app/*.pnp.js
+my-app/package-lock.json
+
+# testing
+/coverage
+
+# production
+/build
+
+
+# ---------- ---------- ----------
+# ---------- Backend    ----------
+# ---------- ---------- ----------
+
+# dependencies
+[Bb]ackend/node_modules
+[Bb]ackend/.pnp
+[Bb]ackend/*.pnp.js
+[Bb]ackend/package-lock.json
+
+# keys
+[Bb]ackend/config/keys.tsx
+
+
+# ---------- ---------- ----------
+# ---------- Other      ----------
+# ---------- ---------- ----------
+
+# macos dot files
+.DS_Store
+.AppleDouble
+.LSOverride
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+*.lnk
+
+# dot env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# React Component Preview
+previewConfig.json
+
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local

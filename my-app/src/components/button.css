@@ -1,0 +1,21 @@
+.btn {
+    all: unset;
+    padding: 0.5em 0.75em;
+    line-height: 1em;
+    border-radius: 0.75em;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.btn.primary {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
+}
+.btn.secondary {
+    color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
+}
+.btn.tertiary {
+    color: var(--color-primary);
+    border: 0.1rem solid transparent;
+}
